@@ -1,0 +1,31 @@
+<div class="row">
+<form action="/cadastro" method="post" class="col-7" autocomplete="off">
+    <h2>cadastro</h2>
+    <div class="mb-3">
+        <label for="nome" class="form-label">nome: </label>
+        <input type="text" name="nome" id="nome" class="input form-control" required="true">
+        <div style="color:red" class="form-text">{{errNome}}</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">email: </label>
+        <input type="email" name="email" id="email" class="input form-control" required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="senha" class="form-label">senha: </label>
+        <input type="password" name="senha" id="senha" class="input form-control" required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="confSenha" class="form-label">confirme sua senha: </label>
+        <input type="password" name="confSenha" id="confSenha" class="input form-control" required="true">
+        <div style="color:red" class="form-text">{{errSenha}}</div>
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Cadastrar">
+</form>
+</div>
+<hr>
+<h3>já tem uma conta? faça seu login aqui</h3>
+<a href="/login"><button class="btn btn-primary">------Login------</button></a>

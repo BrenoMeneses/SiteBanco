@@ -1,0 +1,18 @@
+<h1>depositar</h1>
+
+<form action="/depositar/{{Usuario.dataValues.id}}" method="post">
+
+    <div class="mb-3">
+        <label for="valorD" class="form-label">valor à depositar: </label>
+        <input type="number" name="valorD" id="valorD" class="input form-control" required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="senha" class="form-label">sua senha: </label>
+        <input type="password" name="senha" id="senha" class="input form-control" required="true">
+        <div style="color:red" class="form-text">{{errSenha}}</div>
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Cadastrar">
+</form>
+<hr>

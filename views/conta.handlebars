@@ -1,0 +1,7 @@
+<h1>Bem Vindo a sua Conta {{Usuario.dataValues.nome}}</h1>
+
+<h2>saldo: {{conta.dataValues.dinheiro}} R$</h2>
+<h2>número da conta: {{conta.dataValues.idconta}}</h2>
+
+<a href="/transferir/{{Usuario.dataValues.id}}"><button class="btn btn-primary">TRANSFERIR</button></a>
+<a href="/depositar/{{Usuario.dataValues.id}}"><button class="btn btn-primary">DEPOSITAR</button></a>
