@@ -14,4 +14,6 @@ const contabanco = conexao.sequelize.define('contabanco', {
     }
 })
 
+contabanco.sync()
+
 module.exports = contabanco
