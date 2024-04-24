@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 
 app.engine('handlebars', engine({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
-app.use(express.static(path.join(__dirname, "static")))
+app.use(express.static(path.join(__dirname, "static"))) 
 
 app.use('/', routs)
 

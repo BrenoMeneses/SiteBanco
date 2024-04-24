@@ -4,10 +4,11 @@ const sequelize = new Sequelize('bancoapp', 'root', '', {
     dialect: 'mysql'
 })
 
-sequelize.authenticate().then(()=>{
+sequelize.authenticate().then(async ()=>{
+    // await sequelize.sync({force: true})
     console.log("conectado ao banco de dados")
-}).catch((err)=>{
-    console.log(err)
+}).catch(async (err)=>{
+    console.log(JSON.stringify(err))
 })
 
 module.exports = {
