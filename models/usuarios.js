@@ -17,6 +17,8 @@ const usuarios = conexao.sequelize.define('usuario', {
     }
 })
 
+usuarios.sync()
+
 usuarios.belongsTo(contabanco, {constraints: true, foreignKey: 'contaId'})
 
 module.exports = usuarios
